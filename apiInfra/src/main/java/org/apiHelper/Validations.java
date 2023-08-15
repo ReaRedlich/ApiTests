@@ -29,14 +29,11 @@ public class Validations {
      */
     private Response<ResponseBody> validationResponse(Call<ResponseBody> call, int expectedCode) throws IOException {
         Response<ResponseBody> response = call.execute();
-        checkCode(response, expectedCode);
+        checkStatusCode(response, expectedCode);
         return response;
     }
 
-    /**
-     * ethod for checking if return correct response code
-     */
-    private void checkCode(Response<ResponseBody> response, int expectedCode) {
+    private void checkStatusCode(Response<ResponseBody> response, int expectedCode) {
         int actualCode = response.raw().code();
         System.out.println("Response Code: " + actualCode);
         if(actualCode != expectedCode) {
