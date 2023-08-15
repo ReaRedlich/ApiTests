@@ -25,7 +25,7 @@ public class Validations {
     }
 
     /**
-     * Method to validate response - check the response code
+     * Method for validate response code
      */
     private Response<ResponseBody> validationResponse(Call<ResponseBody> call, int expectedCode) throws IOException {
         Response<ResponseBody> response = call.execute();
