@@ -17,10 +17,6 @@ public class Deserialization {
     public <T> T getObject(Response<ResponseBody> response, Class<T> objectClass, String jsonPath) throws IOException {
         String json = getRawBody(response);
         System.out.println("Response Body: " + json);
-        return getObject(json, objectClass, jsonPath);
-    }
-
-    public <T> T getObject(String json, Class<T> objectClass, String jsonPath) {
         return JsonPath.using(gsonConf).parse(json).read(jsonPath, objectClass);
     }
 

@@ -9,4 +9,10 @@ import retrofit2.http.*;
 
     @GET("api/users/{id}")
     Call<ResponseBody> getSingleUser(@Path("id") int userId);
+
+    @GET("api/users")
+    Call<ResponseBody> getListOfUsers(@Query("page") int numberOfPages);
+
+    @POST("api/users")
+    Call<ResponseBody> createUser(@Body RequestBody createUserRequests);
 }

@@ -4,6 +4,8 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Response;
 import java.io.IOException;
+
+import static java.net.HttpURLConnection.HTTP_CREATED;
 import static java.net.HttpURLConnection.HTTP_OK;
 
 public class Validations {
@@ -13,6 +15,13 @@ public class Validations {
      */
     public Response<ResponseBody> ok(Call<ResponseBody> call) throws IOException {
         return validationResponse(call, HTTP_OK);
+    }
+
+    /**
+     * Validate if status code 201 return
+     */
+    public Response<ResponseBody> created(Call<ResponseBody> call) throws IOException {
+        return validationResponse(call, HTTP_CREATED);
     }
 
     /**
