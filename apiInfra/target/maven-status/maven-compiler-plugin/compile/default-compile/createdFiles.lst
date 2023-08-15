@@ -1,0 +1,11 @@
+org/apiManagerHelper/ApiClientFactory.class
+org/apiManager/responses/Data.class
+org/apiManager/responses/UserData.class
+org/enums/ContentType.class
+org/apiManager/ReqresApiFunctions.class
+org/apiManager/ReqresApiManager.class
+org/apiManagerHelper/Validations.class
+org/apiManager/ReqresEndPoint.class
+org/apiManagerHelper/Deserialization.class
+org/enums/BaseUrl.class
+org/apiManager/responses/Support.class
