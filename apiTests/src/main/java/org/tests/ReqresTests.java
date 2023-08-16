@@ -6,12 +6,19 @@ import org.apiManager.requests.createUser.CreateUserRequests;
 import org.apiManager.responses.createUser.CreateUserResponse;
 import org.apiManager.responses.singleUser.UserData;
 import org.apiHelper.ApiClientFactory;
+import org.enums.Service;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class ReqresTests {
     private final ReqresApiFunctions reqresApiFunctions = new ReqresApiFunctions();
     private final ApiClientFactory client = new ApiClientFactory();
-    private final ReqresEndPoint reqresEndPoint = client.ClientBuilder(ReqresEndPoint.class);
+    private ReqresEndPoint reqresEndPoint;
+
+    @BeforeClass
+    private void init() throws Exception {
+        reqresEndPoint = client.ClientBuilder(Service.REQRES.getService(), ReqresEndPoint.class);
+    }
 
     @Test
     public void test_getSingleUser() throws Exception {
