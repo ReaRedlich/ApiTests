@@ -26,7 +26,7 @@ public class ApiClientFactory {
         FileInputStream fileInputStream = new FileInputStream("../config.properties");
         properties.load(fileInputStream);
 
-            // Get the value for a specific key
+        // Get the value for a specific key
         String baseUrl = properties.getProperty(specificKey);
         if (baseUrl == null || baseUrl.isEmpty())
             throw new Exception(String.format("Key '%s' was not found in the file 'config.properties'", specificKey));
