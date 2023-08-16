@@ -6,7 +6,7 @@ import org.apiManager.requests.createUser.CreateUserRequests;
 import org.apiManager.responses.createUser.CreateUserResponse;
 import org.apiManager.responses.singleUser.UserData;
 import org.apiHelper.ApiClientFactory;
-import org.enums.Service;
+import org.enums.ServiceName;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -17,7 +17,7 @@ public class ReqresTests {
 
     @BeforeClass
     private void init() throws Exception {
-        reqresEndPoint = client.ClientBuilder(Service.REQRES.getService(), ReqresEndPoint.class);
+        reqresEndPoint = client.ClientBuilder(ServiceName.REQRES.getServiceName(), ReqresEndPoint.class);
     }
 
     @Test
