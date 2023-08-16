@@ -8,26 +8,26 @@ import java.io.IOException;
 import static java.net.HttpURLConnection.HTTP_CREATED;
 import static java.net.HttpURLConnection.HTTP_OK;
 
-public class Validations {
+public class ResponseValidations {
 
     /**
      * Validate if status code 200 return
      */
     public Response<ResponseBody> ok(Call<ResponseBody> call) throws IOException {
-        return validationResponse(call, HTTP_OK);
+        return verifyStatusCode(call, HTTP_OK);
     }
 
     /**
      * Validate if status code 201 return
      */
     public Response<ResponseBody> created(Call<ResponseBody> call) throws IOException {
-        return validationResponse(call, HTTP_CREATED);
+        return verifyStatusCode(call, HTTP_CREATED);
     }
 
     /**
      * Method for validate response code
      */
-    private Response<ResponseBody> validationResponse(Call<ResponseBody> call, int expectedCode) throws IOException {
+    private Response<ResponseBody> verifyStatusCode(Call<ResponseBody> call, int expectedCode) throws IOException {
         Response<ResponseBody> response = call.execute();
         checkStatusCode(response, expectedCode);
         return response;

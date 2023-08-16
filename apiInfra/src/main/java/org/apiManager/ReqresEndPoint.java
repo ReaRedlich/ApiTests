@@ -5,7 +5,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.*;
 
-    public interface ReqresEndPoint {
+public interface ReqresEndPoint {
 
     @GET("api/users/{id}")
     Call<ResponseBody> getSingleUser(@Path("id") int userId);

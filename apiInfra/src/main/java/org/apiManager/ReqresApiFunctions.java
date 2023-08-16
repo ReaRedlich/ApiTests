@@ -9,7 +9,7 @@ import retrofit2.Response;
 import java.io.IOException;
 
 public class ReqresApiFunctions {
-    private final ReqresApiManager registerApiManager = new ReqresApiManager();
+    private final ReqresApiValidate registerApiManager = new ReqresApiValidate();
     private final Deserialization deserialization = new Deserialization();
 
     public UserData getSingleUser(ReqresEndPoint reqresEndPoint, int userId) throws IOException {
