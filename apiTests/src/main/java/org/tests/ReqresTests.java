@@ -5,7 +5,7 @@ import org.apiManager.ReqresEndPoint;
 import org.apiManager.requests.createUser.CreateUserRequests;
 import org.apiManager.responses.createUser.CreateUserResponse;
 import org.apiManager.responses.singleUser.UserData;
-import org.apiHelper.ApiClientFactory;
+import org.Factory.ApiClientFactory;
 import org.enums.ServiceName;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

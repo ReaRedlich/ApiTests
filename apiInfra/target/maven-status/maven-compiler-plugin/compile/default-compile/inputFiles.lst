@@ -6,8 +6,8 @@
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiManager/responses/singleUser/Data.java
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiHelper/Deserialization.java
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/enums/ContentType.java
+/Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/Factory/ApiClientFactory.java
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiManager/responses/singleUser/Support.java
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiManager/ReqresApiValidate.java
-/Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/enums/BaseUrl.java
-/Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiHelper/ApiClientFactory.java
+/Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/enums/ServiceName.java
 /Users/rearedlich/Code/apitestingjava/apiInfra/src/main/java/org/apiHelper/ResponseValidations.java
